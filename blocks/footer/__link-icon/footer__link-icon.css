@@ -1,0 +1,7 @@
+.footer__link-icon {
+  background-image: url(../../../images/link-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}

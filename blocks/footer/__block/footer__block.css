@@ -1,0 +1,12 @@
+.footer__block {
+  margin: 0 0 48px;
+  width: 320px;
+}
+
+.footer__block:first-child {
+  margin: 40px 0 48px;
+}
+
+.footer__block:last-child {
+  margin: 0 0 40px;
+}
