@@ -1,0 +1,10 @@
+.footer__link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #3B3748;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+}
