@@ -1,0 +1,28 @@
+.about-action__learn-more {
+  max-width: 179px;
+  height: 44px;
+  border: 2px solid #3B3748;
+  border-radius: 22px;
+  text-decoration: none;
+  color: #3B3748;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 360.98px) {
+  .about-action__learn-more {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768.98px) {
+  .about-action__learn-more {
+    grid-area: 2/2;
+    margin: 0;
+  }
+}

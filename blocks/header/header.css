@@ -1,0 +1,16 @@
+.header {
+  margin: 0;
+  padding: 12px 20px;
+  background-color: rgb(255, 212, 0);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 360.98px) {
+  .header {
+    padding: 22px 40px;
+    justify-content: center;
+  }
+}
+
