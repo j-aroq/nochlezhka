@@ -6,6 +6,7 @@
 @import url(../blocks/first-screen/first-screen.css);
 @import url(../blocks/about-action/about-action.css);
 @import url(../blocks/host-event/host-event.css);
+@import url(../blocks/hedonismfest/hedonismfest.css);
 @import url(../blocks/footer/footer.css);
 
 @import url(../blocks/header/header.css);
@@ -33,6 +34,12 @@
 @import url(../blocks/host-event/__title/host-event__title.css);
 @import url(../blocks/host-event/__subtitle/host-event__subtitle.css);
 @import url(../blocks/host-event/__button/host-event__button.css);
+
+@import url(../blocks/hedonismfest/__title/hedonismfest__title.css);
+@import url(../blocks/hedonismfest/__subtitle/hedonismfest__subtitle.css);
+@import url(../blocks/hedonismfest/__block/hedonismfest__block.css);
+@import url(../blocks/hedonismfest/__slider/hedonismfest__slider.css);
+@import url(../blocks/hedonismfest/__button/hedonismfest__button.css);
 
 @import url(../blocks/footer/__block/footer__block.css);
 @import url(../blocks/footer/__link-list/footer__link-list.css);
