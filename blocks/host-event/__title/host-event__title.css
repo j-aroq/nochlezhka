@@ -1,0 +1,9 @@
+.host-event__title {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: lowercase;
+  font-weight: normal;
+  width: 262px;
+}
