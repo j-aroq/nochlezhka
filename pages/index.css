@@ -2,8 +2,32 @@
 @import url(../vendor/fonts.css);
 
 @import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/first-screen/first-screen.css);
+@import url(../blocks/about-action/about-action.css);
 @import url(../blocks/host-event/host-event.css);
 @import url(../blocks/footer/footer.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__link/_phone/header__link_phone.css);
+@import url(../blocks/header/__link/_navigation/header__link_navigation.css);
+@import url(../blocks/header/__link-image/header__link-image.css);
+@import url(../blocks/header/__link-image/_location/header__link-image_location.css);
+@import url(../blocks/header/__link-text/header__link-text.css);
+@import url(../blocks/header/__navigation/header__navigation.css);
+@import url(../blocks/header/__menu-button/header__menu-button.css);
+@import url(../blocks/header/__donate-button/header__donate-button.css);
+@import url(../blocks/header/__donate-text/header__donate-text.css);
+@import url(../blocks/first-screen/__text/first-screen__text.css);
+@import url(../blocks/first-screen/__learn-more/first-screen__learn-more.css);
+@import url(../blocks/first-screen/__learn-more-picture/first-screen__learn-more-picture.css);
+@import url(../blocks/about-action/__title/about-action__title.css);
+@import url(../blocks/about-action/__text-container/about-action__text-container.css);
+@import url(../blocks/about-action/__text/about-action__text.css);
+@import url(../blocks/about-action/__learn-more/about-action__learn-more.css);
 
 @import url(../blocks/host-event/__block/host-event__block.css);
 @import url(../blocks/host-event/__title/host-event__title.css);
