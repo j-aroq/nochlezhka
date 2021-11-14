@@ -6,3 +6,16 @@
   box-sizing: border-box;
   border-radius: 22px;
 }
+
+@media screen and (min-width: 1440px) {
+  .host-event__button {
+    border: 2px solid #3b3748;
+    box-sizing: border-box;
+    border-radius: 26px;
+    color: #3b3748;
+    padding: 10px 22px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

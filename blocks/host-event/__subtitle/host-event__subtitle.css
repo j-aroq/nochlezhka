@@ -13,3 +13,16 @@
 .host-event__subtitle p:last-child {
   margin: 0;
 }
+
+@media screen and (min-width: 1440px) {
+  .host-event__subtitle {
+    width: 420px;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 32px 0;
+  }
+
+  .host-event__subtitle p:first-child {
+    margin: 8px 0 18px;
+  }
+}

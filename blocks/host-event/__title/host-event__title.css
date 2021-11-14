@@ -7,3 +7,14 @@
   font-weight: normal;
   width: 262px;
 }
+
+@media screen and (min-width: 1440px) {
+  .host-event__title {
+    background: #ffd400;
+    color: #3b3748;
+    width: 394px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+  }
+}
