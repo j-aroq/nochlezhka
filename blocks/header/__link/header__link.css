@@ -1,0 +1,17 @@
+.header__link {
+  margin: 0;
+  margin-right: auto;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #3B3748;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 360.98px) {
+  .header__link {
+    display: flex;
+  }
+}
