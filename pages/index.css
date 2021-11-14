@@ -46,3 +46,7 @@
 @import url(../blocks/footer/__link/_type/footer__link_type_social.css);
 @import url(../blocks/footer/__link-list/_type/footer__link-list_type_social.css);
 @import url(../blocks/footer/__link/_type/footer__link_type_mail.css);
+
+html {
+  scroll-behavior: smooth;
+}
