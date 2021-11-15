@@ -46,6 +46,7 @@
 @import url(../blocks/hedonismfest/__image/_position/hedonismfest__image_position_right-middle.css);
 @import url(../blocks/hedonismfest/__image/_position/hedonismfest__image_position_middle.css);
 @import url(../blocks/hedonismfest/__image/_position/hedonismfest__image_position_left-bottom.css);
+@import url(../blocks/visible/visible.css);
 
 @import url(../blocks/footer/__block/footer__block.css);
 @import url(../blocks/footer/__link-list/footer__link-list.css);
