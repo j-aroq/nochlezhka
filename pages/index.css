@@ -46,8 +46,7 @@
 @import url(../blocks/popup/__donate-button-text/popup__donate-button-text.css);
 @import url(../blocks/popup/__back-button/popup__back-button.css);
 @import url(../blocks/popup/__back-button-text/popup__back-button-text.css);
-@import url(../blocks/popup/popup__change-city-form/popup__change-city-form.css);
-@import url(../blocks/popup/__change-city-picture/popup__change-city-picture.css);
+@import url(../blocks/popup/__change-city-form/popup__change-city-form.css);
 @import url(../blocks/popup/__change-city-label/popup__change-city-label.css);
 @import url(../blocks/popup/__change-city-radio/popup__change-city-radio.css);
 @import url(../blocks/popup/__pseudo-item/popup__pseudo-item.css);
@@ -98,3 +97,4 @@
 html {
   scroll-behavior: smooth;
 }
+
