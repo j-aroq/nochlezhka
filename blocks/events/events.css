@@ -1,0 +1,7 @@
+.events {
+    margin: 0;
+    width: 100%;
+    background-color: #EBE9ED;
+    display: flex;
+    flex-direction: column;
+}
