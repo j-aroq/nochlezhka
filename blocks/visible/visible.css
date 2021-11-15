@@ -1,5 +1,11 @@
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .visible {
     display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .visible {
+    display: block;
   }
 }

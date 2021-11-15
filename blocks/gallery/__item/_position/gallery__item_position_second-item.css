@@ -1,0 +1,6 @@
+.gallery__item_position_second-item {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
