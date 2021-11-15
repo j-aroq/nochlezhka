@@ -12,29 +12,29 @@
   <header class="header">
     <img src="./images/logo.svg" alt="logo" class="header__logo">
     <menu class="header__menu">
-      <a class="header__link" href="#">
+      <a class="header__link page__link" href="#" target="_blank">
         <img src="./images/location.svg" alt="location" class="header__link-image header__link-image_location">
         <p class="header__link-text">Санкт-Петербург</p>
       </a>
       <nav class="header__navigation">
-        <a class="header__link header__link_navigation" href="#">
+        <a class="header__link header__link_navigation page__link" href="#" target="_blank">
           <p class="header__link-text">куда пойти</p>
         </a>
-        <a class="header__link header__link_navigation" href="#">
+        <a class="header__link header__link_navigation page__link" href="#" target="_blank">
           <p class="header__link-text">стать участником</p>
         </a>
-        <a class="header__link header__link_navigation" href="#">
+        <a class="header__link header__link_navigation page__link" href="#" target="_blank">
           <p class="header__link-text">о фестивале</p>
         </a>
       </nav>
-      <a class="header__link header__link_phone" href="#">
+      <a class="header__link header__link_phone page__link" href="#" target="_blank">
         <img src="./images/like.svg" alt="like" class="header__link-image header__link-image_like">
         <p class="header__link-text">хочу пойти</p>
       </a>
-      <button class="header__menu-button" type="button">
+      <button class="header__menu-button page__button" type="button">
         <img src="./images/menu.svg" alt="menu">
       </button>
-      <button class="header__donate-button" type="button">
+      <button class="header__donate-button page__button" type="button">
         <p class="header__donate-text">поддержать</p>
       </button>
     </menu>
@@ -45,7 +45,7 @@
     <section class="first-screen">
       <a href="#about-action" class="first-screen__learn-more">
         <p class="first-screen__text">узнать больше</p>
-        <img src="./images/learn-more.svg" alt="узнать больше" class="first-screen__learn-more-picture">
+        <img src="./images/learn-more.svg" alt="узнать больше" class="first-screen__learn-more-picture page__link">
       </a>
     </section>
     <section class="about-action" id="about-action">
@@ -54,7 +54,7 @@
         <p class="about-action__text">Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте домашние посиделки с друзьями — и помогайте бездомным!</p>
         <p class="about-action__text">Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.</p>
       </div>
-      <a href="#" class="about-action__learn-more">узнать подробнее</a>
+      <a href="#" class="about-action__learn-more page__link" target="_blank">узнать подробнее</a>
     </section>
 
     <section class="events">
@@ -183,67 +183,65 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer__block">
-      <h2 class="footer__title">Организатор:</h2>
-      <ul class="footer__link-list">
-        <li class="footer__list-element">
-          <a href="https://homeless.ru/" target="_blank" class="footer__link">
-            <p class="footer__link-text">Ночлежка</p>
-            <div class="footer__link-icon"></div>
-          </a>
-        </li>
-        <li class="footer__list-element">
-          <a href="mailto:info@hedonismfest.ru" class="footer__link footer__link_type_mail">
-            <p class="footer__link-text">info@hedonismfest.ru</p>
-          </a>
-        </li>
-      </ul>
+  <div class="popup popup_menu">
+    <div class="popup__container">
+      <p class="popup__navigation-text">ваш город:</p>
+      <button class="popup__change-city-button page__button" type="button">
+        <h2 class="popup__city-name">Санкт-Петербург</h2>
+        <img src="./images/change-city.svg" alt="сменить город" class="popup__change-city-button-picture">
+      </button>
+      <p class="popup__navigation-text">навигация</p>
+      <nav class="popup__navigation">
+        <ul class="popup__list">
+            <a href="#" class="popup__link page__link" target="_blank">
+              <li class="popup__list-item">куда пойти</li>
+            </a>
+            <a href="#" class="popup__link page__link" target="_blank">
+              <li class="popup__list-item">стать участником</li>
+            </a>
+            <a href="#" class="popup__link page__link" target="_blank">
+              <li class="popup__list-item">о фестивале</li>
+            </a>
+        </ul>
+      </nav>
+      <img src="./images/popup-logo.svg" alt="Ночлежка" class="popup__logo">
+      <button class="popup__donate-button page__button">
+        <p class="popup__donate-button-text">пожертвовать</p>
+      </button>
     </div>
-    <div class="footer__block">
-      <h2 class="footer__title">Сделано с любовью:</h2>
-      <ul class="footer__link-list">
-        <li class="footer__list-element">
-          <a href="https://fastsol.digital/" target="_blank" class="footer__link">
-            <p class="footer__link-text">Fastsol Digital</p>
-            <div class="footer__link-icon"></div>
-          </a>
-        </li>
-        <li class="footer__list-element">
-          <a href="https://shishki.co/" target="_blank" class="footer__link">
-            <p class="footer__link-text">shishki.collective</p>
-            <div class="footer__link-icon"></div>
-          </a>
-        </li>
-        <li class="footer__list-element">
-          <a href="https://practicum.yandex.ru/" target="_blank" class="footer__link">
-            <p class="footer__link-text">студентами Яндекс.Практикума</p>
-            <div class="footer__link-icon"></div>
-          </a>
-        </li>
-      </ul>
+  </div>
+
+  <div class="popup popup_change-city">
+    <div class="popup__container">
+      <button class="popup__back-button page__button" type="button">
+        <img src="./images/back.svg" alt="назад" class="popup__back-button-picture">
+        <p class="popup__back-button-text">назад</p>
+      </button>
+      <p class="popup__navigation-text">ваш город:</p>
+      <form name="change-city" class="popup__change-city-form">
+        <label for="Moscow" class="popup__change-city-label"> <span>Москва</span>
+          <input type="radio" name="Moscow" id="Moscow" value="Москва" class="popup__change-city-radio">
+          <img src="./images/checked.svg" alt="галочка" class="popup__change-city-picture">
+        </label>
+        <label for="Sanct-Piterburg" class="popup__change-city-label"> <span>Санкт-Петербург</span>
+          <input type="radio" name="Sanct-Piterburg" id="Sanct-Piterburg" value="Санкт-Петербург" class="popup__change-city-radio" checked>
+          <img src="./images/checked.svg" alt="галочка" class="popup__change-city-picture popup__change-city-picture_checked">
+        </label>
+        <label for="Sochi" class="popup__change-city-label"> <span>Сочи</span>
+          <input type="radio" name="Sochi" id="Sochi" value="Сочи" class="popup__change-city-radio">
+          <img src="./images/checked.svg" alt="галочка" class="popup__change-city-picture">
+        </label>
+        <label for="Kaluga" class="popup__change-city-label"> <span>Калуга</span>
+          <input type="radio" name="Kaluga" id="Kaluga" value="Калуга" class="popup__change-city-radio">
+          <img src="./images/checked.svg" alt="галочка" class="popup__change-city-picture">
+        </label>
+        <label for="Ekaterinburg" class="popup__change-city-label"> <span>Екатеринбург</span>
+          <input type="radio" name="Ekaterinburg" id="Ekaterinburg" value="Екатеринбург" class="popup__change-city-radio">
+          <img src="./images/checked.svg" alt="галочка" class="popup__change-city-picture">
+        </label>
+      </form>
     </div>
-    <div class="footer__block">
-      <h2 class="footer__title">Мы в соцсетях:</h2>
-      <ul class="footer__link-list footer__link-list_type_social">
-        <li class="footer__list-element">
-          <a href="#" target="_blank" class="footer__link footer__link_type_social">
-            <img class="footer__social-icon" src="/images/facebook-logo.svg" alt="Логотип Facebook">
-          </a>
-        </li>
-        <li class="footer__list-element footer__link-list_type_social">
-          <a href="#" target="_blank" class="footer__link footer__link_type_social">
-            <img class="footer__social-icon" src="/images/instagram-logo.svg" alt="Логотип Instagram">
-          </a>
-        </li>
-        <li class="footer__list-element footer__link-list_type_social">
-          <a href="#" target="_blank" class="footer__link footer__link_type_social">
-            <img class="footer__social-icon" src="/images/vkontakte-logo.svg" alt="Логотип Вконтакте">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+  </div>
 
   <script src="scripts/index.js"></script>
 </body>
