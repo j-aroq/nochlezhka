@@ -8,3 +8,9 @@
   background: #fff;
   color: #3b3748;
 }
+
+@media screen and (min-width: 1440px) {
+  .hedonismfest {
+    max-width: 1440px;
+  }
+}

@@ -1,0 +1,14 @@
+.hedonismfest__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1440px) {
+  .hedonismfest__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

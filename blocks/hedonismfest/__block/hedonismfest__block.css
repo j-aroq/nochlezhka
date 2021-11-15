@@ -3,14 +3,29 @@
   width: 320px;
 }
 
-.hedonismfest__block h2 {
+.hedonismfest__block .hedonismfest__title {
   margin: 0 0 12px;
 }
 
-.hedonismfest__block p {
+.hedonismfest__block .hedonismfest__subtitle {
   margin: 0 0 20px;
 }
 
-.hedonismfest__block img {
+.hedonismfest__block .hedonismfest__image {
   margin: 0 0 12px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hedonismfest__block {
+    padding: 80px 60px 80px 40px;
+    width: 1340px;
+  }
+
+  .hedonismfest__block .hedonismfest__title {
+    margin: 0 0 24px 0;
+  }
+
+  .hedonismfest__block .hedonismfest__subtitle {
+    margin: 0 0 40px;
+  }
 }
