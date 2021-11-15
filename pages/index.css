@@ -50,7 +50,7 @@
 @import url(../blocks/popup/__change-city-picture/popup__change-city-picture.css);
 @import url(../blocks/popup/__change-city-label/popup__change-city-label.css);
 @import url(../blocks/popup/__change-city-radio/popup__change-city-radio.css);
-@import url(../blocks/popup/__change-city-picture/_checked/popup__change-city-picture_checked.css);
+@import url(../blocks/popup/__pseudo-item/popup__pseudo-item.css);
 
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__title/events__title.css);
@@ -76,6 +76,11 @@
 @import url(../blocks/host-event/__title/host-event__title.css);
 @import url(../blocks/host-event/__subtitle/host-event__subtitle.css);
 @import url(../blocks/host-event/__button/host-event__button.css);
+
+@import url(../blocks/partners/partners.css);
+@import url(../blocks/partners/__title/partners__title.css);
+@import url(../blocks/partners/__logos/partners__logos.css);
+@import url(../blocks/partners/__logo/partners__logo.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__block/footer__block.css);
