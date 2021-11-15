@@ -1,5 +1,11 @@
 .popup__change-city-radio {
   position: absolute;
-  z-index: -1;
-  opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.popup__change-city-radio:checked + .popup__pseudo-item {
+  background-image: url(../../../images/checked.svg);
 }
