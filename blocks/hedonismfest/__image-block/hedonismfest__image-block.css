@@ -1,0 +1,8 @@
+.hedonismfest__image-block {
+  display: grid;
+  grid-template-columns: 310px 330px 330px 310px;
+  grid-template-rows: 310px 310px 310px;
+  /* grid-auto-flow: row; */
+  row-gap: 40px;
+  column-gap: 20px;
+}

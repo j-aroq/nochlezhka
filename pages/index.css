@@ -40,6 +40,12 @@
 @import url(../blocks/hedonismfest/__block/hedonismfest__block.css);
 @import url(../blocks/hedonismfest/__slider/hedonismfest__slider.css);
 @import url(../blocks/hedonismfest/__button/hedonismfest__button.css);
+@import url(../blocks/hedonismfest/__image-block/hedonismfest__image-block.css);
+@import url(../blocks/hedonismfest/__image/hedonismfest__image.css);
+@import url(../blocks/hedonismfest/__image/_size/hedonismfest__image_size_big.css);
+@import url(../blocks/hedonismfest/__image/_position/hedonismfest__image_position_right-middle.css);
+@import url(../blocks/hedonismfest/__image/_position/hedonismfest__image_position_middle.css);
+@import url(../blocks/hedonismfest/__image/_position/hedonismfest__image_position_left-bottom.css);
 
 @import url(../blocks/footer/__block/footer__block.css);
 @import url(../blocks/footer/__link-list/footer__link-list.css);
