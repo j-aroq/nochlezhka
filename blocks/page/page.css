@@ -1,5 +1,5 @@
 .page {
-  background-color: #000;
+  background-color: #FCFAF7;
   min-width: 360px;
   max-width: 1440px;
   margin: 0 auto;
@@ -11,5 +11,4 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-  scroll-behavior: smooth;
 }

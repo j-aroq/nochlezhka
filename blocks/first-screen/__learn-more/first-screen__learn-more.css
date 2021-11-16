@@ -1,0 +1,15 @@
+.first-screen__learn-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #3B3748;
+  margin: 0;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768.98px) {
+  .first-screen__learn-more {
+    margin-bottom: 80px;
+  }
+}
