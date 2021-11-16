@@ -1,4 +1,9 @@
-@media screen and (max-width: 360px) {
+.hedonismfest__title {
+  font-size: 48px;
+  line-height: 52px;
+}
+
+@media screen and (max-width: 460px) {
   .hedonismfest__title {
     margin: 0;
     padding: 0;
@@ -7,12 +12,5 @@
     text-transform: lowercase;
     font-weight: 500;
     width: 262px;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .hedonismfest__title {
-    font-size: 48px;
-    line-height: 52px;
   }
 }
