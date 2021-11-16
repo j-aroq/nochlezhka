@@ -10,7 +10,7 @@
   background: none;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 460px) {
   .host-event__button {
     width: 180px;
     color: #fff;
