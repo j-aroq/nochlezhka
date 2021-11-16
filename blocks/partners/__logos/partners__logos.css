@@ -1,0 +1,12 @@
+.partners__logos {
+  margin: 0 20px 40px 20px;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.container::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
