@@ -1,0 +1,17 @@
+.footer__illustration {
+  display: none;
+}
+
+@media screen and (min-width: 361px) {
+  .footer__illustration {
+    display: block;
+    margin: 40px;
+    padding: 0;
+    width: 193px;
+    height: 193px;
+    background-image: url("../../../images/footer-illustration.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

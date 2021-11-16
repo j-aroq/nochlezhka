@@ -4,6 +4,16 @@
   align-items: center;
   margin: 0 auto;
   padding: 0;
-  max-width: 360px;
+  max-width: 100%;
   background-color: #FFD400;
+}
+
+@media screen and (min-width: 361px) {
+  .footer {
+    max-width: 1440px;
+    flex-direction: row;
+    background-color: #EBE9ED;
+    align-items: flex-start;
+    justify-content: stretch;
+  }
 }

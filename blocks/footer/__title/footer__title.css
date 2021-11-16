@@ -7,3 +7,11 @@
   font-weight: 500;
   color: #3B3748;
 }
+
+@media screen and (min-width: 361px) {
+  .footer__title {
+    margin: 0 0 20px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
