@@ -1,0 +1,6 @@
+.gallery__item_position_first-item {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}

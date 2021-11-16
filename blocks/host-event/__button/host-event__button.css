@@ -1,8 +1,25 @@
 .host-event__button {
-  background: inherit;
-  color: #fff;
-  padding: 12px 20px;
-  border: 2px solid #ffffff;
+  border: 2px solid #3b3748;
   box-sizing: border-box;
-  border-radius: 22px;
+  border-radius: 26px;
+  color: #3b3748;
+  padding: 10px 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  background: none;
+}
+
+@media screen and (max-width: 460px) {
+  .host-event__button {
+    width: 180px;
+    color: #fff;
+    padding: 12px 20px;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
