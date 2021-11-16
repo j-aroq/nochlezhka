@@ -7,8 +7,9 @@
     color: #3B3748;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 700px) {
     .events__title {
+        margin: 40px 20px 20px;
         line-height: 36px;
         font-size: 32px;
     }

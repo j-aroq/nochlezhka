@@ -60,6 +60,7 @@
 @import url(../blocks/events/__cards-container/events__cards-container.css);
 @import url(../blocks/events/__card/events__card.css);
 @import url(../blocks/events/__like-button/events__like-button.css);
+@import url(../blocks/events/__like-button/_active/events__like-button_active.css);
 @import url(../blocks/events/__card-image/events__card-image.css);
 @import url(../blocks/events/__card-image-link/events__card-image-link.css);
 @import url(../blocks/events/__card-nameplate/events__card-nameplate.css);
