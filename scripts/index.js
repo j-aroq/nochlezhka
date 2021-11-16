@@ -93,25 +93,27 @@ function closePopup (popup) {
 
 const eventsCards = document.querySelectorAll(".events__card");
 eventsCards.forEach(element => {
-   element.querySelector(".events__like-button").addEventListener("click", event => {
-    event.target.classList.toggle("events__like-button_active");
+  element.querySelector(".events__like-button").addEventListener("click", event => {
+   event.target.classList.toggle("events__like-button_active");
+ })
+})
 
 menuButton.addEventListener('click', function () {
   popupMenu.classList.toggle('popup_opened')
   if (popupChangeCity.classList.contains('popup_opened')) {
-    closePopup(popupChangeCity)
-    closePopup(popupMenu)
+    closePopup(popupChangeCity);
+    closePopup(popupMenu);
     getCheckedRadio()
   }
 })
 
 changeCityButton.addEventListener('click', function () {
-  closePopup(popupMenu)
+  closePopup(popupMenu);
   openPopup(popupChangeCity)
 })
 
 backButton.addEventListener('click', function () {
-  openPopup(popupMenu)
+  openPopup(popupMenu);
   closePopup(popupChangeCity)
   getCheckedRadio ()
 })
@@ -119,14 +121,14 @@ backButton.addEventListener('click', function () {
 function getCheckedRadio () {
   labelCity.forEach(function (item) {
     if (item.checked) {
-      cityName.textContent = item.value
+      cityName.textContent = item.value;
       console.log(item.value)
     }
   })
 }
 
 openDonateButtonInPopup.addEventListener('click', function () {
-  closePopup(popupMenu)
+  closePopup(popupMenu);
   openPopup(popupDonate)
 })
 
