@@ -13,3 +13,10 @@
 .footer__link:hover {
   opacity: .7;
 }
+
+@media screen and (min-width: 361px) {
+  .footer__link {
+    justify-content: start;
+    height: 48px;
+  }
+}
