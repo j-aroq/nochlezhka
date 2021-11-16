@@ -6,6 +6,7 @@ const backButton = popupChangeCity.querySelector('.popup__back-button')
 const formChangeCity = popupChangeCity.querySelector('.popup__change-city-form')
 const labelCity = formChangeCity.querySelectorAll('.popup__change-city-radio')
 const cityName = popupMenu.querySelector('.popup__city-name')
+const eventsCards = document.querySelectorAll(".events__card");
 
 menuButton.addEventListener('click', function () {
   popupMenu.classList.toggle('popup_opened')
@@ -35,3 +36,10 @@ function getCheckedRadio () {
     }
   })
 }
+
+eventsCards.forEach(element => {
+   element.querySelector(".events__like-button").addEventListener("click", event => {
+    event.target.classList.toggle("events__like-button_active");
+  })
+})
+
