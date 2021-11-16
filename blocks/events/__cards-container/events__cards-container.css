@@ -15,7 +15,7 @@
 .events__cards-container::-webkit-scrollbar-track {
     background-color:  #FCFAF7;
     border-radius: 100px;
-    
+    margin-right: 40px;
 }
 
 .events__cards-container::-webkit-scrollbar-thumb {
@@ -27,5 +27,8 @@
     .events__cards-container {
         margin-left: 0;
         margin-top: 28px;
+    }
+    .events__cards-container::-webkit-scrollbar-track {
+        margin: 0 20px;
     }
 }
