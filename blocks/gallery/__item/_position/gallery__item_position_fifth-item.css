@@ -1,0 +1,6 @@
+.gallery__item_position_fifth-item {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
