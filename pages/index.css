@@ -48,6 +48,16 @@
 @import url(../blocks/events/__card-description/events__card-description.css);
 @import url(../blocks/events/__card-detail/events__card-detail.css);
 
+@import url(../blocks/numbers/numbers.css);
+@import url(../blocks/numbers/__title/numbers__title.css);
+@import url(../blocks/numbers/__desktop-image/numbers__desktop-image.css);
+@import url(../blocks/numbers/__mobile-image/numbers__mobile-image.css);
+@import url(../blocks/numbers/__stat-container/numbers__stat-container.css);
+@import url(../blocks/numbers/__counter/numbers__counter.css);
+@import url(../blocks/numbers/__text/numbers__text.css);
+@import url(../blocks/numbers/__stat-container/_position/numbers__stat-container_position_left.css);
+@import url(../blocks/numbers/__stat-container/_position/numbers__stat-container_position_right.css);
+
 @import url(../blocks/host-event/host-event.css);
 @import url(../blocks/host-event/__block/host-event__block.css);
 @import url(../blocks/host-event/__title/host-event__title.css);
