@@ -1,0 +1,18 @@
+.popup__sum-of-money-input {
+  max-width: 154px;
+  border: 2px solid #96949E;
+  box-sizing: border-box;
+  border-radius: 22px;
+  padding: 12px 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 768.98px) {
+  .popup__sum-of-money-input {
+    max-width: 169px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 24px;
+  }
+}
