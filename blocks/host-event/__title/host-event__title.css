@@ -1,8 +1,8 @@
 .host-event__title {
-  margin: 0;
+  margin: 0 40px 0 0;
   padding: 0;
   color: #3b3748;
-  max-width: 394px;
+  max-width: 420px;
   font-weight: 500;
   font-size: 48px;
   line-height: 52px;
@@ -21,3 +21,4 @@
   .host-event__title {
     color: #fff;
   }
+}
