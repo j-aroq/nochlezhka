@@ -14,9 +14,14 @@
   opacity: .7;
 }
 
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 425px) {
   .footer__link {
     justify-content: start;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .footer__link {
     height: 48px;
   }
 }

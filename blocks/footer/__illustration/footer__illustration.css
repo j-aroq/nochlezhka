@@ -2,10 +2,10 @@
   display: none;
 }
 
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 1150px) {
   .footer__illustration {
     display: block;
-    margin: 40px;
+    margin: 80px 40px 0 40px;
     padding: 0;
     width: 193px;
     height: 193px;

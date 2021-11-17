@@ -5,3 +5,9 @@
   padding: 0;
   background-color: #EBE9ED;
 }
+
+@media screen and (min-width: 361px) {
+  .partners {
+    background-color: #FCFAF7;
+  }
+}

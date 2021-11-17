@@ -3,7 +3,7 @@
   width: calc(100% - 40px);
 }
 
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 768px) {
   .footer__block {
     margin: 0;
     width: initial;

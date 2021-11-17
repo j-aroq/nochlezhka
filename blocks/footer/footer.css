@@ -8,9 +8,9 @@
   background-color: #FFD400;
 }
 
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 768px) {
   .footer {
-    max-width: 1440px;
+    max-width: 100%;
     flex-direction: row;
     background-color: #EBE9ED;
     align-items: flex-start;
