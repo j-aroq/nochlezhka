@@ -128,6 +128,7 @@
 @import url(../blocks/gallery/__item/_position/gallery__item_position_fifth-item.css);
 
 @import url(../blocks/partners/partners.css);
+@import url(../blocks/partners/__wrapper/partners__wrapper.css);
 @import url(../blocks/partners/__title/partners__title.css);
 @import url(../blocks/partners/__logos/partners__logos.css);
 @import url(../blocks/partners/__logo/partners__logo.css);
@@ -136,6 +137,7 @@
 @import url(../blocks/partners/__logo/_type/partners__logo_type_vasyleostrovsky.css);
 
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__wrapper/footer__wrapper.css);
 @import url(../blocks/footer/__illustration/footer__illustration.css);
 @import url(../blocks/footer/__block-container/footer__block-container.css);
 @import url(../blocks/footer/__block/footer__block.css);
