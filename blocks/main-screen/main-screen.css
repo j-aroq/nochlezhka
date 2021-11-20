@@ -1,4 +1,4 @@
-.first-screen {
+.main-screen {
   min-height: 652px;
   background-image: url(../../images/first\ screen1.png);
   background-size: auto;
@@ -7,11 +7,11 @@
   margin: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768.98px) {
-  .first-screen {
+  .main-screen {
     background-image: url(../../images/first\ screen\ desctop.png);
     background-size: cover;
     min-height: 760px;
