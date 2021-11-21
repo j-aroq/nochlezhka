@@ -1,7 +1,7 @@
 .host-event {
   background: #ffd400;
   color: #3b3748;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   display: flex;
   flex-direction: column;
   align-items: center;

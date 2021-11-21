@@ -127,16 +127,11 @@
 @import url(../blocks/hedonismfest/__button/hedonismfest__button.css);
 @import url(../blocks/hedonismfest/__image/hedonismfest__image.css);
 @import url(../blocks/hedonismfest/__button/_status/hedonismfest__button_status_active.css);
-@import url(../blocks/visible/visible.css);
+@import url(../blocks/hedonismfest/__image/_is/hedonismfest__image_is_visible.css);
 
 @import url(../blocks/gallery/gallery.css);
 @import url(../blocks/gallery/__image/gallery__image.css);
 @import url(../blocks/gallery/__item/gallery__item.css);
-@import url(../blocks/gallery/__item/_position/gallery__item_position_first-item.css);
-@import url(../blocks/gallery/__item/_position/gallery__item_position_second-item.css);
-@import url(../blocks/gallery/__item/_position/gallery__item_position_third-item.css);
-@import url(../blocks/gallery/__item/_position/gallery__item_position_fourth-item.css);
-@import url(../blocks/gallery/__item/_position/gallery__item_position_fifth-item.css);
 
 @import url(../blocks/partners/partners.css);
 @import url(../blocks/partners/__wrapper/partners__wrapper.css);
@@ -160,4 +155,3 @@
 @import url(../blocks/footer/__list-element/footer__list-element.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
 @import url(../blocks/footer/__title/footer__title.css);
-

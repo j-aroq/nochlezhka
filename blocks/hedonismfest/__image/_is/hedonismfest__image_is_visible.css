@@ -1,9 +1,9 @@
-.visible {
+.hedonismfest__image_is_visible {
   display: none;
 }
 
 @media screen and (max-width: 460px) {
-  .visible {
+  .hedonismfest__image_is_visible {
     display: block;
   }
 }
