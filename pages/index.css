@@ -13,6 +13,7 @@
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/_position/_fixed/header_position_fixed.css);
+@import url(../blocks/header/__container/header__container.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__menu/header__menu.css);
 @import url(../blocks/header/__location-button/header__location-button.css);
@@ -43,6 +44,7 @@
 @import url(../blocks/popup/_type/_menu/popup_type_menu.css);
 @import url(../blocks/popup/_type/_change-city/popup_type_change-city.css);
 @import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__content/popup__content.css);
 @import url(../blocks/popup/__navigation-text/popup__navigation-text.css);
 @import url(../blocks/popup/__change-city-button/popup__change-city-button.css);
 @import url(../blocks/popup/__city-name/popup__city-name.css);
