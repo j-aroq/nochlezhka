@@ -134,9 +134,7 @@
 @import url(../blocks/partners/__title/partners__title.css);
 @import url(../blocks/partners/__logos/partners__logos.css);
 @import url(../blocks/partners/__logo/partners__logo.css);
-@import url(../blocks/partners/__logo/_type/partners__logo_type_gallery-spb.css);
 @import url(../blocks/partners/__logo/_type/partners__logo_type_surf.css);
-@import url(../blocks/partners/__logo/_type/partners__logo_type_vasyleostrovsky.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__wrapper/footer__wrapper.css);
