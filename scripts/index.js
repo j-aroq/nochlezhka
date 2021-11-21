@@ -116,6 +116,11 @@ menuButton.addEventListener('click', function () {
     closePopup(popupMenu);
     getCheckedRadio()
   }
+  if (popupDonate.classList.contains('popup_opened')) {
+    closePopup(popupDonate)
+    closePopup(popupMenu)
+    headerRelative()
+  }
 })
 
 changeCityButton.addEventListener('click', function () {
