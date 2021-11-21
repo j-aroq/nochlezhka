@@ -68,23 +68,33 @@ function initPage(button){
 
 initPage(sliderLadyButton);
 
-const popupMenu = document.querySelector('.popup_menu')
+const popupMenu = document.querySelector('.popup_type_menu')
 const menuButton = document.querySelector('.header__menu-button')
 const changeCityButton = popupMenu.querySelector('.popup__change-city-button')
-const popupChangeCity = document.querySelector('.popup_change-city')
+const popupChangeCity = document.querySelector('.popup_type_change-city')
 const backButton = popupChangeCity.querySelector('.popup__back-button')
 const formChangeCity = popupChangeCity.querySelector('.popup__change-city-form')
 const labelCity = formChangeCity.querySelectorAll('.popup__form-radio')
 const cityName = popupMenu.querySelector('.popup__city-name')
 const openDonateButtonInPopup = popupMenu.querySelector('.popup__open-donate-button')
 const openDonateButtonInHeader = document.querySelector('.header__donate-button')
-const popupDonate = document.querySelector('.popup_donate')
+const popupDonate = document.querySelector('.popup_type_donate')
 const closeDonateButton = popupDonate.querySelector('.popup__donate-close-button')
 const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money')
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input')
+const header = document.querySelector('.header')
+
+function headerFixed() {
+  header.classList.add('header_position_fixed')
+}
+
+function headerRelative() {
+  header.classList.remove('header_position_fixed')
+}
 
 function openPopup (popup) {
   popup.classList.add('popup_opened')
+  headerFixed()
 }
 
 function closePopup (popup) {
@@ -100,6 +110,7 @@ eventsCards.forEach(element => {
 
 menuButton.addEventListener('click', function () {
   popupMenu.classList.toggle('popup_opened')
+  header.classList.toggle('header_position_fixed')
   if (popupChangeCity.classList.contains('popup_opened')) {
     closePopup(popupChangeCity);
     closePopup(popupMenu);
@@ -122,7 +133,6 @@ function getCheckedRadio () {
   labelCity.forEach(function (item) {
     if (item.checked) {
       cityName.textContent = item.value;
-      console.log(item.value)
     }
   })
 }
@@ -134,9 +144,13 @@ openDonateButtonInPopup.addEventListener('click', function () {
 
 openDonateButtonInHeader.addEventListener('click', function () {
   openPopup(popupDonate)
+  headerRelative()
 })
 
-closeDonateButton.addEventListener('click', () => closePopup(popupDonate))
+closeDonateButton.addEventListener('click', function () {
+  closePopup(popupDonate)
+  headerRelative()
+})
 
 sumOfMoneyButton.forEach(function (item) {
   item.addEventListener('click', function () {
