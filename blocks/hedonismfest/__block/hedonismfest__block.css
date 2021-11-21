@@ -4,14 +4,6 @@
   display: block;
 }
 
-/* .hedonismfest__block .hedonismfest__title {
-  margin: 0 0 24px 0;
-} */
-
-/* .hedonismfest__block .hedonismfest__subtitle {
-  margin: 0 0 40px;
-} */
-
 @media screen and (max-width: 1439px) {
   .hedonismfest__block {
     width: 79%;
@@ -23,12 +15,4 @@
     padding: 40px 0;
     width: 320px;
   }
-
-  /* .hedonismfest__block .hedonismfest__title {
-    margin: 0 0 12px;
-  } */
-
-  /* .hedonismfest__block .hedonismfest__subtitle {
-    margin: 0 0 20px;
-  } */
 }
