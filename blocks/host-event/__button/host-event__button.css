@@ -11,6 +11,14 @@
   font-style: normal;
 }
 
+@media screen and (max-width: 500px) {
+  .host-event__button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 @media screen and (max-width: 460px) {
   .host-event__button {
     width: 180px;
@@ -19,8 +27,14 @@
     border: 2px solid #ffffff;
     box-sizing: border-box;
     border-radius: 22px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
   }
+}
+
+.host-event__button {
+  transition: opacity 0.2s linear;
+  cursor: pointer;
+}
+
+.host-event__button:hover {
+  opacity: 0.5;
 }
