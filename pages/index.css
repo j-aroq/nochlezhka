@@ -101,6 +101,7 @@
 @import url(../blocks/events/__card-title/events__card-title.css);
 @import url(../blocks/events/__card-description/events__card-description.css);
 @import url(../blocks/events/__card-detail/events__card-detail.css);
+@import url(../blocks/events/__card-detail/_type/events__card-detail_type_extra-options.css);
 
 @import url(../blocks/numbers/numbers.css);
 @import url(../blocks/numbers/__wrapper/numbers__wrapper.css);
