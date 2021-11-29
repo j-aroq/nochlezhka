@@ -84,17 +84,8 @@ const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money')
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input')
 const header = document.querySelector('.header')
 
-function headerFixed() {
-  header.classList.add('header_position_fixed')
-}
-
-function headerRelative() {
-  header.classList.remove('header_position_fixed')
-}
-
 function openPopup (popup) {
   popup.classList.add('popup_opened')
-  headerFixed()
 }
 
 function closePopup (popup) {
@@ -110,7 +101,6 @@ eventsCards.forEach(element => {
 
 menuButton.addEventListener('click', function () {
   popupMenu.classList.toggle('popup_opened')
-  header.classList.toggle('header_position_fixed')
   if (popupChangeCity.classList.contains('popup_opened')) {
     closePopup(popupChangeCity);
     closePopup(popupMenu);
@@ -119,7 +109,6 @@ menuButton.addEventListener('click', function () {
   if (popupDonate.classList.contains('popup_opened')) {
     closePopup(popupDonate)
     closePopup(popupMenu)
-    headerRelative()
   }
 })
 
@@ -149,12 +138,10 @@ openDonateButtonInPopup.addEventListener('click', function () {
 
 openDonateButtonInHeader.addEventListener('click', function () {
   openPopup(popupDonate)
-  headerRelative()
 })
 
 closeDonateButton.addEventListener('click', function () {
   closePopup(popupDonate)
-  headerRelative()
 })
 
 sumOfMoneyButton.forEach(function (item) {
