@@ -173,4 +173,12 @@ window.addEventListener('scroll', () => {
   }
 
   prevScroll = curScroll;
-})
+});
+
+const donateFormElement = document.querySelector('.popup__donate-form');
+
+donateFormElement.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  closePopup(popupDonate);
+  donateFormElement.reset();
+});
