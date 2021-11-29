@@ -1,22 +1,13 @@
-/* импорт шрифтов вывел в отдельный файл для удобства */
-
 @font-face {
-  src: url("fonts/Inter-Regular.woff2") format('woff2'),
-       url("fonts/Inter-Regular.woff") format('woff');
-  font-family: Inter;
+  src: url("fonts/TT_Firs_Neue_Regular.woff2") format("woff2"),
+       url("fonts/TT_Firs_Neue_Regular.woff") format("woff");
+  font-family: "TT_Firs_Neue";
   font-weight: normal;
 }
 
 @font-face {
-  src: url("fonts/Inter-Bold.woff2") format('woff2'),
-       url("fonts/Inter-Bold.woff") format('woff');
-  font-family: Inter;
-  font-weight: bold;
-}
-
-@font-face {
-  src: url("fonts/Inter-Black.woff2") format('woff2'),
-       url("fonts/Inter-Black.woff") format('woff');
-  font-family: Inter;
-  font-weight: 900;
+  src: url("fonts/TT_Firs_Neue_Medium.woff2") format("woff2"),
+       url("fonts/TT_Firs_Neue_Medium.woff") format("woff");
+  font-family: "TT_Firs_Neue";
+  font-weight: 500;
 }
