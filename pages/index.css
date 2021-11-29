@@ -27,6 +27,7 @@
 @import url(../blocks/header/__menu-button/header__menu-button.css);
 @import url(../blocks/header/__donate-button/header__donate-button.css);
 @import url(../blocks/header/__donate-text/header__donate-text.css);
+@import url(../blocks/header/_hidden/header_hidden.css);
 
 @import url(../blocks/main-screen/main-screen.css);
 @import url(../blocks/main-screen/__text/main-screen__text.css);

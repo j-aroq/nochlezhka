@@ -171,3 +171,19 @@ inputSum.addEventListener('click', function () {
     item.classList.remove('popup__sum-of-money_active')
   })
 })
+
+let prevScroll = window.scrollY;
+let curScroll;
+
+window.addEventListener('scroll', () => {
+  curScroll = window.scrollY;
+  let headerHidden = header.classList.contains('header_hidden');
+
+  if (curScroll > prevScroll && !headerHidden) {
+    header.classList.add('header_hidden');
+  } else if (curScroll < prevScroll && headerHidden) {
+    header.classList.remove('header_hidden');
+  }
+
+  prevScroll = curScroll;
+})
