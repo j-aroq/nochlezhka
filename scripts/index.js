@@ -1,8 +1,8 @@
-const sliderParkButton = document.querySelector('.slider-park');
-const sliderLadyButton = document.querySelector('.slider-lady');
-const sliderDrinkButton = document.querySelector('.slider-drink');
-const sliderExhibitionButton = document.querySelector('.slider-exhibition');
-const sliderTeamButton = document.querySelector('.slider-team');
+const sliderParkButton = document.querySelector('.hedonismfest__button_slider_park');
+const sliderLadyButton = document.querySelector('.hedonismfest__button_slider_lady');
+const sliderDrinkButton = document.querySelector('.hedonismfest__button_slider_drink');
+const sliderExhibitionButton = document.querySelector('.hedonismfest__button_slider_exhibition');
+const sliderTeamButton = document.querySelector('.hedonismfest__button_slider_team');
 
 const sliderButtons = document.querySelectorAll('.hedonismfest__button');
 
