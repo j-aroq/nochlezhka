@@ -242,11 +242,11 @@
           </figure>
         </div>
         <div class="hedonismfest__slider">
-          <button type="button" class="hedonismfest__button slider-lady"></button>
-          <button type="button" class="hedonismfest__button slider-park"></button>
-          <button type="button" class="hedonismfest__button slider-drink"></button>
-          <button type="button" class="hedonismfest__button slider-exhibition"></button>
-          <button type="button" class="hedonismfest__button slider-team"></button>
+          <button type="button" class="hedonismfest__button hedonismfest__button_slider_lady"></button>
+          <button type="button" class="hedonismfest__button hedonismfest__button_slider_park"></button>
+          <button type="button" class="hedonismfest__button hedonismfest__button_slider_drink"></button>
+          <button type="button" class="hedonismfest__button hedonismfest__button_slider_exhibition"></button>
+          <button type="button" class="hedonismfest__button hedonismfest__button_slider_team"></button>
         </div>
       </div>
     </section>
@@ -390,7 +390,7 @@
 
   <div class="popup popup_type_donate">
     <div class="popup__container popup__container_type_donate">
-        <form class="popup__donate-form" name="donate">
+        <form class="popup__donate-form" name="donate" id="donate">
           <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
           <button type="button" class="popup__donate-close-button page__button">
             <span class="popup__donate-close-button-text">пожертвовать</span>
@@ -432,7 +432,7 @@
           </fieldset>
           <p class="popup__offer">Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями <a href="#" class="popup__offer popup__offer_color_blue page__link" target="_blank">оферты</a>, <a href="#" class="popup__offer popup__offer_color_blue page__link" target="_blank">политики</a> в отношении обработки и защиты персональных данных и даёте <a href="#" class="popup__offer popup__offer_color_blue page__link" target="_blank">согласие</a> на их обработку</p>
         </form>
-        <button class="popup__donate-button page__button" type="button">
+        <button class="popup__donate-button page__button" type="submit" form="donate">
           <span class="popup__donate-button-text">перейти к оплате</span>
         </button>
     </div>
