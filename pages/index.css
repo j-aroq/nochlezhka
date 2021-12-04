@@ -3,7 +3,6 @@
 
 @import url(../blocks/page/page.css);
 
-
 @import url(../blocks/document/document.css);
 
 @import url(../blocks/page/__link/page__link.css);
@@ -117,6 +116,7 @@
 @import url(../blocks/host-event/__block/host-event__block.css);
 @import url(../blocks/host-event/__title/host-event__title.css);
 @import url(../blocks/host-event/__subtitle/host-event__subtitle.css);
+@import url(../blocks/host-event/__subtitle-paragraph/host-event__subtitle-paragraph.css);
 @import url(../blocks/host-event/__button/host-event__button.css);
 
 @import url(../blocks/hedonismfest/hedonismfest.css);
