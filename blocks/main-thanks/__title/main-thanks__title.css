@@ -1,0 +1,15 @@
+.main-thanks__title {
+  font-family: TT Firs Neue, "Arial", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 108.333%;
+  color: #fff;
+  margin: 0 0 16px 0;
+}
+@media screen and (max-width: 460px) {
+  .main-thanks__title {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+}
