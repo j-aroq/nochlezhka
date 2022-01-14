@@ -1,8 +1,7 @@
 .page__link {
-  /*transition: opacity 0.2s linear;*/
+  transition: opacity 0.2s linear;
 }
 
 .page__link:hover {
-  transition-duration: 0.3s;
-  background-color: #5100b8;
+  opacity: 0.5;
 }
