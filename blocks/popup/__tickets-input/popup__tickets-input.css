@@ -1,9 +1,17 @@
 .popup__tickets-input{
   margin: 0;
   padding: 0;
-  width: 96px;
-  height: 48px;
+  width: 48px;
+  height: 44px;
   border: 2px solid #7100FF;
   box-sizing: border-box;
   text-align: center;
 }
+
+@media screen and (min-width: 768.98px) {
+  .popup__tickets-input {
+    width: 96px;
+    height: 48px;
+  }
+}
+

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <title>Гедонизм-фест</title>
   <link rel="stylesheet" href="pages/index.css"> <!-- файл стилей -->
 </head>
@@ -458,9 +458,10 @@
     </div>
   </div>
 
-  <div class="popup popup_type_tickets popup_opened">
-    <div class="popup_container popup_container_type_tickets popup__container_type_donate">
+  <div class="popup popup_type_tickets popup_opened ">
+    <div class="popup_container popup_container_type_tickets">
       <form class="popup__tickets-form" name="tickets" id="tickets">
+        <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
         <button type="button" class="popup__donate-close-button page__button">
           <span class="popup__donate-close-button-text">купить билет</span>
           <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
@@ -469,9 +470,9 @@
         <fieldset class="popup__tickets-purchase">
           <h2 class="popup__tickets-price">500 &#8381</h3>
             <div class="popup__tickets-amount">
-              <button class="popup__tickets-button popup__tickets-button_type_less" type="button">-</button>
+              <button class="popup__tickets-button popup__tickets-button_type_less page__button" type="button">-</button>
               <input class="popup__tickets-input" value="1" type="input" id="amount">
-              <button class="popup__tickets-button popup__tickets-button_type_more" type="button">+</button>
+              <button class="popup__tickets-button popup__tickets-button_type_more page__button" type="button">+</button>
             </div>
         </fieldset>
         <p class="popup__donate-text">email</p>
