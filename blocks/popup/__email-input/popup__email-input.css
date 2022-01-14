@@ -13,6 +13,15 @@
   white-space: nowrap;
 }
 
+.popup__email-input:focus {
+  outline: none;
+  border: 2px solid #7100FF;
+}
+
+.popup__email-input:invalid:focus:not(:placeholder-shown) {
+  border: 2px solid #F40934;
+}
+
 @media screen and (min-width: 768.98px) {
   .popup__email-input {
     padding: 12px 24px;

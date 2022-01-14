@@ -1,0 +1,9 @@
+.page__link-hover {
+  transition: color 0.2s linear;
+  cursor: pointer;
+}
+
+.page__link-hover:hover {
+  color: #5100B8;
+}
+

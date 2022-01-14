@@ -1,0 +1,9 @@
+.page__button-hover {
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.page__button-hover:hover {
+  background-color: #5100B8;
+}
+

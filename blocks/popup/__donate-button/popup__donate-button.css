@@ -16,5 +16,6 @@
   .popup__donate-button {
     margin-top: 32px;
     max-width: 532px;
+    border-radius: 26px;
   }
 }
