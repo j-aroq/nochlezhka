@@ -1,13 +1,13 @@
 .main-thanks__subtitle {
-  font-family: TT Firs Neue, "Arial", sans-serif;
   font-size: 24px;
-  font-weight: 500;
   line-height: 100%;
-  color: #fff;
-  margin: 0 0 16px 0;
+  margin: 0 0 24px 0;
 }
 @media screen and (max-width: 460px) {
   .main-thanks__subtitle {
     margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 20px;
   }
 }
