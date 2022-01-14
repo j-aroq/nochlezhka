@@ -17,10 +17,8 @@
     padding: 12px 30.5px;
   }
 }
-.main-thanks__link:hover {
-  background-color: #5100b8;
-}
+
 .main-thanks__link:disabled {
-  background-color: #EBE9ED;
-  color: #96949E;
+  background-color: #ebe9ed;
+  color: #96949e;
 }

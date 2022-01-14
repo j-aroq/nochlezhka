@@ -8,7 +8,6 @@
   color: #fcfaf7;
   font-size: 18px;
   line-height: 24px;
-  cursor: pointer;
 }
 @media screen and (max-width: 700px) {
   .events__thanks-link {
@@ -19,9 +18,7 @@
     margin: 32px auto 40px 20px;
   }
 }
-.events__thanks-link:hover {
-  background-color: #5100b8;
-}
+
 .events__thanks-link:disabled {
   background-color: #ebe9ed;
   color: #96949e;
