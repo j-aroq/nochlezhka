@@ -64,7 +64,7 @@
 @import url(../blocks/popup/__donate-form/popup__donate-form.css);
 @import url(../blocks/popup/__slider/popup__slider.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
-@import url(../blocks/popup/__close-button-picture/popup__donate-close-button-picture.css);
+@import url(../blocks/popup/__close-button-picture/popup__close-button-picture.css);
 @import url(../blocks/popup/__text/popup__text.css);
 @import url(../blocks/popup/__payment-method/popup__payment-method.css);
 @import url(../blocks/popup/__sum-of-money-container/popup__sum-of-money-container.css);
@@ -88,6 +88,7 @@
 @import url(../blocks/popup/__tickets-amount/popup__tickets-amount.css);
 @import url(../blocks/popup/__tickets-form/popup__tickets-form.css);
 @import url(../blocks/popup/__header/popup__header.css);
+@import url(../blocks/popup/__header-text/popup__header-text.css);
 
 
 @import url(../blocks/events/events.css);
