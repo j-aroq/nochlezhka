@@ -216,11 +216,4 @@ lessButton.addEventListener('click', function(){
 
 const popupTicketsValue = {};
 
-const ticketsFormElement = document.querySelector('.popup__tickets-form');
-const popupTickets = document.querySelector('.popup_type_tickets');
 
-ticketsFormElement.addEventListener('submit', (evt) => {
-  evt.preventDefault();
-  closePopup(popupTickets);
-  ticketsFormElement.reset();
-});
