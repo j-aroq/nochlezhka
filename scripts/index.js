@@ -161,6 +161,7 @@ openDonateButtonInHeader.addEventListener('click', function () {
 })
  */
 
+// Открытие страницы "Спасибо за помощь"
 openDonateButtonInHeader.addEventListener("click", function () {
   document.location.href = "./thanks.html";
 });
