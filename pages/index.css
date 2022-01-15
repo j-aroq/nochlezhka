@@ -63,10 +63,9 @@
 @import url(../blocks/popup/__container/_type/_tickets/popup_container_type_tickets.css);
 @import url(../blocks/popup/__donate-form/popup__donate-form.css);
 @import url(../blocks/popup/__slider/popup__slider.css);
-@import url(../blocks/popup/__donate-close-button/popup__donate-close-button.css);
-@import url(../blocks/popup/__donate-close-button-text/popup__donate-close-button-text.css);
-@import url(../blocks/popup/__donate-close-button-picture/popup__donate-close-button-picture.css);
-@import url(../blocks/popup/__donate-text/popup__donate-text.css);
+@import url(../blocks/popup/__close-button/popup__close-button.css);
+@import url(../blocks/popup/__close-button-picture/popup__donate-close-button-picture.css);
+@import url(../blocks/popup/__text/popup__text.css);
 @import url(../blocks/popup/__payment-method/popup__payment-method.css);
 @import url(../blocks/popup/__sum-of-money-container/popup__sum-of-money-container.css);
 @import url(../blocks/popup/__sum-of-money/popup__sum-of-money.css);
@@ -78,8 +77,8 @@
 @import url(../blocks/popup/__pseudo-item/_payment/popup__pseudo-item_payment.css);
 @import url(../blocks/popup/__offer/popup__offer.css);
 @import url(../blocks/popup/__offer/_color/_blue/popup__offer_color_blue.css);
-@import url(../blocks/popup/__donate-button/popup__donate-button.css);
-@import url(../blocks/popup/__donate-button-text/popup__donate-button-text.css);
+@import url(../blocks/popup/__submit-button/popup__submit-button.css);
+@import url(../blocks/popup/__submit-button-text/popup__submit-button-text.css);
 @import url(../blocks/popup/__tickets-purchase/popup__tickets-purchase.css);
 @import url(../blocks/popup/__tickets-price/popup__tickets-price.css);
 @import url(../blocks/popup/__tickets-button/popup__tickets-button.css);
@@ -88,6 +87,7 @@
 @import url(../blocks/popup/__tickets-input/popup__tickets-input.css);
 @import url(../blocks/popup/__tickets-amount/popup__tickets-amount.css);
 @import url(../blocks/popup/__tickets-form/popup__tickets-form.css);
+@import url(../blocks/popup/__header/popup__header.css);
 
 
 @import url(../blocks/events/events.css);

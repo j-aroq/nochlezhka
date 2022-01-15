@@ -433,7 +433,7 @@
         <p class="popup__donate-text">email</p>
         <input type="email" name="email" id="email" placeholder="укажите почту для отправки чека"
           class="popup__email-input" required>
-        <p class="popup__donate-text">способ оплаты</p>
+        <p class="popup__-text">способ оплаты</p>
         <fieldset class="popup__payment-method">
           <label for="card" class="popup__payment-method-label">
             <input type="radio" name="payment" id="card" value="банковской картой" class="popup__form-radio" checked>
@@ -452,8 +452,8 @@
           и защиты персональных данных и даёте <a href="#" class="popup__offer popup__offer_color_blue page__link"
             target="_blank">согласие</a> на их обработку</p>
       </form>
-      <button class="popup__donate-button page__button" type="submit" form="donate">
-        <span class="popup__donate-button-text">перейти к оплате</span>
+      <button class="popup__submit-button page__button" type="submit" form="donate">
+        <span class="popup__submit-button-text">перейти к оплате</span>
       </button>
     </div>
   </div>
@@ -462,11 +462,13 @@
     <div class="popup_container popup_container_type_tickets">
       <form class="popup__tickets-form" name="tickets" id="tickets">
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
-        <button type="button" class="popup__donate-close-button page__button_hover ">
-          <span class="popup__donate-close-button-text">купить билет</span>
-          <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
+        <div class="popup__header">
+          <p class="popup__text">купить билет</p>
+          <button type="button" class="popup__close-button page__button_hover ">
+          <img src="./images/close-icon.svg" alt="закрыть" class="popup__close-button-picture">
         </button>
-        <p class="popup__donate-text">сумма и количество</p>
+        </div>
+        <p class="popup__text">сумма и количество</p>
         <fieldset class="popup__tickets-purchase">
           <h2 class="popup__tickets-price">500 &#8381</h3>
             <div class="popup__tickets-amount">
@@ -475,7 +477,7 @@
               <button class="popup__tickets-button popup__tickets-button_type_more page__button_hover " type="button">+</button>
             </div>
         </fieldset>
-        <p class="popup__donate-text">email</p>
+        <p class="popup__text">email</p>
         <input type="email" name="email" id="email" placeholder="укажите почту для отправки чека"
         class="popup__email-input" required>
       <p class="popup__donate-text">способ оплаты</p>
@@ -497,8 +499,8 @@
         и защиты персональных данных и даёте <a href="#" class="popup__offer popup__offer_color_blue page__link"
           target="_blank">согласие</a> на их обработку</p>
       </form>
-      <button class="popup__donate-button page__button_hover " type="submit" form="donate">
-        <span class="popup__donate-button-text">перейти к оплате</span>
+      <button class="popup__submit-button page__button_hover " type="submit" form="donate">
+        <span class="popup__submit-button-text">перейти к оплате</span>
       </button>
     </div>
   </div>
