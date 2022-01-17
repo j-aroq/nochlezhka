@@ -1,0 +1,6 @@
+.popup__tickets-purchase{
+  display: flex;
+  border: none;
+  justify-content: space-between;
+  padding: 0;
+}
