@@ -1,0 +1,19 @@
+.popup__tickets-button{
+  border: 2px solid #3B3748;
+  background-color: rgba(0, 0, 0, 0);
+  height: 44px;
+  width: 44px;
+  background-color: #7100FF;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 768.98px) {
+  .popup__tickets-button {
+    height: 48px;
+    width: 48px;
+  }
+}

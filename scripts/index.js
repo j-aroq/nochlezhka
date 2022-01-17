@@ -79,8 +79,11 @@ const cityName = popupMenu.querySelector('.popup__city-name')
 const openDonateButtonInPopup = popupMenu.querySelector('.popup__open-donate-button')
 const openDonateButtonInHeader = document.querySelector('.header__donate-button')
 const popupDonate = document.querySelector('.popup_type_donate')
+const popupTickets = document.querySelector('.popup_type_tickets')
 const donateFormElement = document.querySelector('.popup__donate-form');
-const closeDonateButton = popupDonate.querySelector('.popup__close-button')
+const ticketsFormElement = document.querySelector('.popup__tickets-form')
+//const closeDonateButton = popupDonate.querySelector('.popup__close-button')
+const closeButtons = document.querySelectorAll('.popup__close-button')
 const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money')
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input')
 const header = document.querySelector('.header')
@@ -142,10 +145,10 @@ openDonateButtonInHeader.addEventListener('click', function () {
   // openPopup(popupDonate)
 })
 
-closeDonateButton.addEventListener('click', function () {
-  closePopup(popupDonate)
-  donateFormElement.reset();
-})
+//closeDonateButton.addEventListener('click', function () {
+//  closePopup(popupDonate)
+//  donateFormElement.reset();
+//})
 
 sumOfMoneyButton.forEach(function (item) {
   item.addEventListener('click', function () {
@@ -212,4 +215,59 @@ donateFormElement.addEventListener('submit', (evt) => {
   console.log(popupDonateValues);
   //
   donateFormElement.reset();
+});
+
+//Один обработчик для крестиков
+closeButtons.forEach((button)=>{
+  const popup = button.closest('.popup');
+  button.addEventListener('click',()=>closePopup(popup));
+})
+//кнопки + и -
+const moreButton = document.querySelector('.popup__tickets-button_type_more');
+const lessButton = document.querySelector('.popup__tickets-button_type_less');
+const ticketsAmount = document.querySelector('.popup__tickets-input');
+const ticketsPrice = document.querySelector('.popup__tickets-price');
+
+function addTicket(){
+  ticketsAmount.value = parseInt(ticketsAmount.value)+1;
+  ticketsPrice.innerHTML = 500*ticketsAmount.value + '&#8381';
+}
+function removeTicket(){
+  if (ticketsAmount.value>1){
+  ticketsAmount.value = parseInt(ticketsAmount.value)-1;
+  ticketsPrice.innerHTML = 500*ticketsAmount.value + '&#8381';
+  }
+}
+
+ticketsAmount.addEventListener('change',()=>{
+  ticketsPrice.innerHTML = 500*ticketsAmount.value + '&#8381';
+})
+
+moreButton.addEventListener('click',function(){
+  addTicket();
+})
+
+lessButton.addEventListener('click', function(){
+  removeTicket();
+})
+
+ticketsFormElement.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  closePopup(popupTickets);
+  // вывод в консоль значений полей попапа
+  const popupTicketsValues = {};
+
+  popupTicketsValues[ticketsAmount.name] = ticketsAmount.value;
+  popupTicketsValues.Price = ticketsPrice.innerHTML;
+
+  popupTicketsValues[ticketsFormElement.querySelector('.popup__email-input_type_tickets').name] = ticketsFormElement.querySelector('.popup__email-input_type_tickets').value;
+
+  ticketsFormElement.querySelectorAll('.popup__form-radio').forEach(function (item) {
+    if (item.checked) {
+      popupTicketsValues[item.name] = item.value;
+    }
+  })
+  console.log(popupTicketsValues);
+  //
+  ticketsFormElement.reset();
 });
