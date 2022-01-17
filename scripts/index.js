@@ -149,9 +149,13 @@ closeDonateButton.addEventListener('click', function () {
 sumOfMoneyButton.forEach(function (item) {
   item.addEventListener('click', function () {
     sumOfMoneyButton.forEach(function (item) {
-      item.classList.remove('popup__sum-of-money_active')
-    })
-    item.classList.add('popup__sum-of-money_active')
+      item.classList.remove('popup__sum-of-money_active');
+      item.classList.remove('page__button-hover'); //
+      item.classList.add('page__link-hover', 'page__link-hover_border');//
+      })
+    item.classList.add('popup__sum-of-money_active');
+    item.classList.add('page__button-hover'); //
+    item.classList.remove('page__link-hover', 'page__link-hover_border');//
     if (donateFormElement.querySelector('.popup__sum-of-money-input').value < 1) {
       donateFormElement.querySelector('.popup__sum-of-money-input').value = "";
     }
@@ -161,7 +165,9 @@ sumOfMoneyButton.forEach(function (item) {
 inputSum.addEventListener('click', function () {
   sumOfMoneyButton.forEach(function (item) {
     item.classList.remove('popup__sum-of-money_active')
-  })
+    item.classList.remove('page__button-hover'); //
+    item.classList.add('page__link-hover', 'page__link-hover_border');//
+})
 })
 
 let prevScroll = window.scrollY;

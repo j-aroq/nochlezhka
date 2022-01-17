@@ -9,6 +9,7 @@
 @import url(../blocks/page/__button/page__button.css);
 @import url(../blocks/page/__button-hover/page__button-hover.css);
 @import url(../blocks/page/__link-hover/page__link-hover.css);
+@import url(../blocks/page/__link-hover/_border/page__link-hover_border.css);
 
 @import url(../blocks/content/content.css);
 
