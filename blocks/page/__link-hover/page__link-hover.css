@@ -2,6 +2,8 @@
   transition: color 0.2s linear;
   cursor: pointer;
 }
+
 .page__link-hover:hover {
-  color: #5100b8;
+  color: #5100B8;
 }
+

@@ -7,6 +7,9 @@
 
 @import url(../blocks/page/__link/page__link.css);
 @import url(../blocks/page/__button/page__button.css);
+@import url(../blocks/page/__button-hover/page__button-hover.css);
+@import url(../blocks/page/__link-hover/page__link-hover.css);
+@import url(../blocks/page/__link-hover/_border/page__link-hover_border.css);
 
 @import url(../blocks/content/content.css);
 
@@ -63,9 +66,12 @@
 @import url(../blocks/popup/__donate-form/popup__donate-form.css);
 @import url(../blocks/popup/__slider/popup__slider.css);
 @import url(../blocks/popup/__donate-close-button/popup__donate-close-button.css);
+@import url(../blocks/popup/__header/popup__header.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__close-button/popup__close-button.css);
 @import url(../blocks/popup/__donate-close-button-text/popup__donate-close-button-text.css);
-@import url(../blocks/popup/__donate-close-button-picture/popup__donate-close-button-picture.css);
-@import url(../blocks/popup/__donate-text/popup__donate-text.css);
+@import url(../blocks/popup/__close-button-picture/popup__close-button-picture.css);
+@import url(../blocks/popup/__text/popup__text.css);
 @import url(../blocks/popup/__payment-method/popup__payment-method.css);
 @import url(../blocks/popup/__sum-of-money-container/popup__sum-of-money-container.css);
 @import url(../blocks/popup/__sum-of-money/popup__sum-of-money.css);
@@ -77,8 +83,8 @@
 @import url(../blocks/popup/__pseudo-item/_payment/popup__pseudo-item_payment.css);
 @import url(../blocks/popup/__offer/popup__offer.css);
 @import url(../blocks/popup/__offer/_color/_blue/popup__offer_color_blue.css);
-@import url(../blocks/popup/__donate-button/popup__donate-button.css);
-@import url(../blocks/popup/__donate-button-text/popup__donate-button-text.css);
+@import url(../blocks/popup/__submit-button/popup__submit-button.css);
+@import url(../blocks/popup/__submit-button-text/popup__submit-button-text.css);
 
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__wrapper/events__wrapper.css);

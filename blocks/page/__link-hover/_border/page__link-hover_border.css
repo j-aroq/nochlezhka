@@ -1,0 +1,7 @@
+.page__link-hover_border {
+  transition: border-color 0.2s linear;
+}
+
+.page__link-hover_border:hover {
+  border-color: #5100B8;
+}

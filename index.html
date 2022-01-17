@@ -402,38 +402,40 @@
     </div>
   </div>
 
-  <div class="popup popup_type_donate">
+  <section class="popup popup_type_donate popup_opened">
     <div class="popup__container popup__container_type_donate">
       <form class="popup__donate-form" name="donate" id="donate">
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
-        <button type="button" class="popup__donate-close-button page__button">
-          <span class="popup__donate-close-button-text">пожертвовать</span>
-          <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
-        </button>
-        <p class="popup__donate-text">сумма</p>
+        <div class="popup__header">
+          <h2 class="popup__title">пожертвовать</h2>
+          <button type="button" class="popup__close-button page__button">
+            <img src="./images/close-icon.svg" alt="закрыть" class="popup__close-button-picture">
+          </button>
+        </div>
+        <p class="popup__text">сумма</p>
         <div class="popup__sum-of-money-container">
-          <button type="button" class="popup__sum-of-money popup__sum-of-money_active page__button">
+          <button type="button" name="sum-of-money" class="popup__sum-of-money popup__sum-of-money_active page__button-hover">
             <span class="popup__sum-of-money-text">100 ₽</span>
           </button>
-          <button type="button" class="popup__sum-of-money page__button">
+          <button type="button" name="sum-of-money" class="popup__sum-of-money page__link-hover page__link-hover_border">
             <span class="popup__sum-of-money-text">300 ₽</span>
           </button>
-          <button type="button" class="popup__sum-of-money page__button">
+          <button type="button" name="sum-of-money" class="popup__sum-of-money page__link-hover page__link-hover_border">
             <span class="popup__sum-of-money-text">500 ₽</span>
           </button>
-          <button type="button" class="popup__sum-of-money page__button">
+          <button type="button" name="sum-of-money" class="popup__sum-of-money page__link-hover page__link-hover_border">
             <span class="popup__sum-of-money-text">1000 ₽</span>
           </button>
-          <button type="button" class="popup__sum-of-money page__button">
+          <button type="button" name="sum-of-money" class="popup__sum-of-money page__link-hover page__link-hover_border">
             <span class="popup__sum-of-money-text">3000 ₽</span>
           </button>
-          <input type="text" name="sum-of-money" id="sum-of-money" placeholder="другая сумма"
-            class="popup__sum-of-money-input">
+          <input type="number" name="sum-of-money" id="sum-of-money" placeholder="другая сумма"
+            class="popup__sum-of-money-input" min="1">
         </div>
-        <p class="popup__donate-text">email</p>
+        <p class="popup__text">email</p>
         <input type="email" name="email" id="email" placeholder="укажите почту для отправки чека"
           class="popup__email-input" required>
-        <p class="popup__donate-text">способ оплаты</p>
+        <p class="popup__text">способ оплаты</p>
         <fieldset class="popup__payment-method">
           <label for="card" class="popup__payment-method-label">
             <input type="radio" name="payment" id="card" value="банковской картой" class="popup__form-radio" checked>
@@ -447,16 +449,16 @@
           </label>
         </fieldset>
         <p class="popup__offer">Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями <a href="#"
-            class="popup__offer popup__offer_color_blue page__link" target="_blank">оферты</a>, <a href="#"
-            class="popup__offer popup__offer_color_blue page__link" target="_blank">политики</a> в отношении обработки
-          и защиты персональных данных и даёте <a href="#" class="popup__offer popup__offer_color_blue page__link"
+            class="popup__offer popup__offer_color_blue page__link-hover" target="_blank">оферты</a>, <a href="#"
+            class="popup__offer popup__offer_color_blue page__link-hover" target="_blank">политики</a> в отношении обработки
+          и защиты персональных данных и даёте <a href="#" class="popup__offer popup__offer_color_blue page__link-hover"
             target="_blank">согласие</a> на их обработку</p>
       </form>
-      <button class="popup__donate-button page__button" type="submit" form="donate">
-        <span class="popup__donate-button-text">перейти к оплате</span>
+      <button class="popup__submit-button page__button-hover" type="submit" form="donate">
+        <span class="popup__submit-button-text">перейти к оплате</span>
       </button>
     </div>
-  </div>
+  </section>
 
   <script src="scripts/index.js"></script>
 </body>
