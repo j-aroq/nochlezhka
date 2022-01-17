@@ -239,6 +239,10 @@ function removeTicket(){
   }
 }
 
+ticketsAmount.addEventListener('change',()=>{
+  ticketsPrice.innerHTML = 500*ticketsAmount.value + '&#8381';
+})
+
 moreButton.addEventListener('click',function(){
   addTicket();
 })
