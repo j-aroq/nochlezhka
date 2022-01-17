@@ -1,16 +1,16 @@
-.popup_container_type_tickets{
-  margin: 108px auto auto;
+.popup__container_type_tickets{
+  /* margin: 108px auto auto; */
   box-shadow: 0px 4px 12px rgba(59, 55, 72, 0.12);
   border-radius: 24px 24px 0 0;
   background-color: #FCFAF7;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
-  min-height: 704px;
+  /* min-height: 704px; */
 }
 
 @media screen and (min-width: 768.98px) {
-  .popup_container_type_tickets {
+  .popup__container_type_tickets {
     max-width: 612px;
     min-height: 720px;
     border-radius: 24px;

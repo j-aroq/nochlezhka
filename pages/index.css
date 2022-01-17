@@ -84,7 +84,7 @@
 @import url(../blocks/popup/__offer/_color/_blue/popup__offer_color_blue.css);
 @import url(../blocks/popup/__submit-button/popup__submit-button.css);
 @import url(../blocks/popup/__submit-button-text/popup__submit-button-text.css);
-@import url(../blocks/popup/__container/_type/_tickets/popup_container_type_tickets.css);
+@import url(../blocks/popup/__container/_type/_tickets/popup__container_type_tickets.css);
 @import url(../blocks/popup/__tickets-purchase/popup__tickets-purchase.css);
 @import url(../blocks/popup/__tickets-price/popup__tickets-price.css);
 @import url(../blocks/popup/__tickets-button/popup__tickets-button.css);
