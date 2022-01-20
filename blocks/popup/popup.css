@@ -6,9 +6,11 @@
   width: 100%;
   background-color: rgba(0, 0, 0, .5);
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  align-items: baseline;
   z-index: 1;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-y: scroll;
   height: 0;
   opacity: 0;
   transition: height 0s .4s linear, opacity .4s 0s linear;
