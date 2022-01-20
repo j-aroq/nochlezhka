@@ -30,15 +30,15 @@
 @import url(../blocks/header/__donate-text/header__donate-text.css);
 @import url(../blocks/header/_hidden/header_hidden.css);
 
-@import url(../blocks/main-thanks/main-thanks.css);
-@import url(../blocks/main-thanks/_ligth/main-thanks_ligth.css);
-@import url(../blocks/main-thanks/__content/main-thanks__content.css);
-@import url(../blocks/main-thanks/__title/main-thanks__title.css);
-@import url(../blocks/main-thanks/__subtitle/main-thanks__subtitle.css);
-@import url(../blocks/main-thanks/__link/main-thanks__link.css);
-@import url(../blocks/main-thanks/__link/_ligth/main-thanks__link_ligth.css);
-@import url(../blocks/main-thanks/__image/main-thanks__image.css);
-@import url(../blocks/main-thanks/__image/_404/main-thanks__image_404.css);
+@import url(../blocks/main-window/main-window.css);
+@import url(../blocks/main-window/_404/main-window_404.css);
+@import url(../blocks/main-window/__content/main-window__content.css);
+@import url(../blocks/main-window/__content/_404/main-window__content_404.css);
+@import url(../blocks/main-window/__title/main-window__title.css);
+@import url(../blocks/main-window/__subtitle/main-window__subtitle.css);
+@import url(../blocks/main-window/__link/main-window__link.css);
+@import url(../blocks/main-window/__link/_ligth/main-window__link_ligth.css);
+@import url(../blocks/main-window/__404-image/main-window__404-image.css);
 
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__wrapper/events__wrapper.css);
