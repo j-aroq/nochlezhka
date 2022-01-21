@@ -1,8 +1,8 @@
-.main-window_thanks {
+.main-window_type_thanks {
   min-height: 632px;
 }
 @media screen and (max-width: 460px) {
-  .main-window_thanks {
+  .main-window_type_thanks {
     min-height: 560px;
   }
 }

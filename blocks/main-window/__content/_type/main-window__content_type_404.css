@@ -1,8 +1,8 @@
-.main-window__content_404 {
+.main-window__content_type_404 {
   margin-right: 71.45px;
 }
 @media screen and (max-width: 460px) {
-  .main-window__content_404 {
+  .main-window__content_type_404 {
     margin: 0;
   }
 }

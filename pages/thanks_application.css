@@ -30,9 +30,9 @@
 @import url(../blocks/header/_hidden/header_hidden.css);
 
 @import url(../blocks/main-window/main-window.css);
-@import url(../blocks/main-window/_thanks-application/main-window_thanks-application.css);
+@import url(../blocks/main-window/_type/main-window_type_thanks-application.css);
 @import url(../blocks/main-window/__content/main-window__content.css);
-@import url(../blocks/main-window/__content/_thanks-application/main-window__content_thanks-application.css);
+@import url(../blocks/main-window/__content/_type/main-window__content_type_thanks-application.css);
 @import url(../blocks/main-window/__title/main-window__title.css);
 @import url(../blocks/main-window/__subtitle/main-window__subtitle.css);
 @import url(../blocks/main-window/__link/main-window__link.css);
