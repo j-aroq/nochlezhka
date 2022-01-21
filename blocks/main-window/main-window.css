@@ -1,20 +1,18 @@
-.main-thanks {
+.main-window {
   font-family: TT_Firs_Neue, "Arial", sans-serif;
   font-weight: 500;
   font-style: normal;
   color: #fff;
-  min-height: 632px;
   background-color: #7100ff;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 30px;
+  padding: 0 20px;
   flex-wrap: wrap-reverse;
 }
 
 @media screen and (max-width: 460px) {
-  .main-thanks {
-    min-height: 560px;
+  .main-window {
     padding: 0;
     flex-direction: column-reverse;
     justify-content: space-evenly;

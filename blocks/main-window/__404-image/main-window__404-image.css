@@ -1,0 +1,15 @@
+.main-window__404-image {
+  max-width: 367.09px;
+  max-height: 295.47px;
+}
+@media screen and (max-width: 460px) {
+  .main-window__404-image {
+    max-width: 320px;
+    max-height: 256px;
+  }
+}
+@media screen and (max-width: 926px) {
+  .main-window__404-image {
+    transform: scale(-1, 1);
+  }
+}

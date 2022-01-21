@@ -1,0 +1,10 @@
+.main-window_type_404 {
+  min-height: 625px;
+  background-color: #fff;
+  color: #3b3748;
+}
+@media screen and (max-width: 460px) {
+  .main-window_page_404 {
+    min-height: 536px;
+  }
+}
