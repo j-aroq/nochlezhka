@@ -12,7 +12,7 @@ HTML, CSS, JavaScript.
 
 **CОСТАВ КОМАНДЫ**
 
-* Юлия Жидкова [GitHub](https://github.com/AndreiKolosov)
+* Юлия Жидкова [GitHub](https://github.com/j-aroq)
 * Давид Иващенко [GitHub](https://github.com/hakunamatata93)
 * Александр Крамер [GitHub](https://github.com/aleksandr-kramer)
 
