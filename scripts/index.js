@@ -79,7 +79,11 @@ const cityName = popupMenu.querySelector('.popup__city-name')
 const openDonateButtonInPopup = popupMenu.querySelector('.popup__open-donate-button')
 const openDonateButtonInHeader = document.querySelector('.header__donate-button')
 const popupDonate = document.querySelector('.popup_type_donate')
-const closeDonateButton = popupDonate.querySelector('.popup__donate-close-button')
+const popupTickets = document.querySelector('.popup_type_tickets')
+const donateFormElement = document.querySelector('.popup__donate-form');
+const ticketsFormElement = document.querySelector('.popup__tickets-form')
+//const closeDonateButton = popupDonate.querySelector('.popup__close-button')
+const closeButtons = document.querySelectorAll('.popup__close-button')
 const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money')
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input')
 const header = document.querySelector('.header')
@@ -133,30 +137,41 @@ function getCheckedRadio () {
 
 openDonateButtonInPopup.addEventListener('click', function () {
   closePopup(popupMenu);
-  openPopup(popupDonate)
+  openPopup(popupDonate);
 })
 
 openDonateButtonInHeader.addEventListener('click', function () {
-  openPopup(popupDonate)
+  document.location.href = "./thanks.html";
+  // openPopup(popupDonate)
 })
 
-closeDonateButton.addEventListener('click', function () {
-  closePopup(popupDonate)
-})
+//closeDonateButton.addEventListener('click', function () {
+//  closePopup(popupDonate)
+//  donateFormElement.reset();
+//})
 
 sumOfMoneyButton.forEach(function (item) {
   item.addEventListener('click', function () {
     sumOfMoneyButton.forEach(function (item) {
-      item.classList.remove('popup__sum-of-money_active')
-    })
-    item.classList.add('popup__sum-of-money_active')
+      item.classList.remove('popup__sum-of-money_active');
+      item.classList.remove('page__button-hover'); //
+      item.classList.add('page__link-hover', 'page__link-hover_border');//
+      })
+    item.classList.add('popup__sum-of-money_active');
+    item.classList.add('page__button-hover'); //
+    item.classList.remove('page__link-hover', 'page__link-hover_border');//
+    if (donateFormElement.querySelector('.popup__sum-of-money-input').value < 1) {
+      donateFormElement.querySelector('.popup__sum-of-money-input').value = "";
+    }
   })
 })
 
 inputSum.addEventListener('click', function () {
   sumOfMoneyButton.forEach(function (item) {
     item.classList.remove('popup__sum-of-money_active')
-  })
+    item.classList.remove('page__button-hover'); //
+    item.classList.add('page__link-hover', 'page__link-hover_border');//
+})
 })
 
 let prevScroll = window.scrollY;
@@ -175,10 +190,84 @@ window.addEventListener('scroll', () => {
   prevScroll = curScroll;
 });
 
-const donateFormElement = document.querySelector('.popup__donate-form');
-
 donateFormElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
   closePopup(popupDonate);
+  // вывод в консоль значений полей попапа
+  const popupDonateValues = {};
+
+  donateFormElement.querySelectorAll('.popup__sum-of-money').forEach(function (item) {
+    if (item.classList.contains('popup__sum-of-money_active')) {
+      popupDonateValues[item.name] = parseInt(item.querySelector('.popup__sum-of-money-text').textContent);
+    }
+  })
+  if (!popupDonateValues['sum-of-money']) {
+    popupDonateValues[donateFormElement.querySelector('.popup__sum-of-money-input').name] = parseInt(donateFormElement.querySelector('.popup__sum-of-money-input').value);
+  }
+
+  popupDonateValues[donateFormElement.querySelector('.popup__email-input').name] = donateFormElement.querySelector('.popup__email-input').value;
+
+  donateFormElement.querySelectorAll('.popup__form-radio').forEach(function (item) {
+    if (item.checked) {
+      popupDonateValues[item.name] = item.value;
+    }
+  })
+  console.log(popupDonateValues);
+  //
   donateFormElement.reset();
+});
+
+//Один обработчик для крестиков
+closeButtons.forEach((button)=>{
+  const popup = button.closest('.popup');
+  button.addEventListener('click',()=>closePopup(popup));
+})
+//кнопки + и -
+const moreButton = document.querySelector('.popup__tickets-button_type_more');
+const lessButton = document.querySelector('.popup__tickets-button_type_less');
+const ticketsAmount = document.querySelector('.popup__tickets-input');
+const ticketsPrice = document.querySelector('.popup__tickets-price');
+
+function addTicket(){
+  ticketsAmount.value = parseInt(ticketsAmount.value)+1;
+  ticketsPrice.innerHTML = 500*ticketsAmount.value + '&#8381';
+}
+function removeTicket(){
+  if (ticketsAmount.value>1){
+  ticketsAmount.value = parseInt(ticketsAmount.value)-1;
+  ticketsPrice.innerHTML = 500*ticketsAmount.value + '&#8381';
+  }
+}
+
+ticketsAmount.addEventListener('change',()=>{
+  ticketsPrice.innerHTML = 500*ticketsAmount.value + '&#8381';
+})
+
+moreButton.addEventListener('click',function(){
+  addTicket();
+})
+
+lessButton.addEventListener('click', function(){
+  removeTicket();
+})
+
+ticketsFormElement.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  closePopup(popupTickets);
+  // вывод в консоль значений полей попапа
+  const popupTicketsValues = {};
+
+  popupTicketsValues[ticketsAmount.name] = ticketsAmount.value;
+  popupTicketsValues.Price = ticketsPrice.innerHTML;
+
+  popupTicketsValues[ticketsFormElement.querySelector('.popup__email-input_type_tickets').name] = ticketsFormElement.querySelector('.popup__email-input_type_tickets').value;
+
+  ticketsFormElement.querySelectorAll('.popup__form-radio').forEach(function (item) {
+    if (item.checked) {
+      popupTicketsValues[item.name] = item.value;
+    }
+  })
+  console.log(popupTicketsValues);
+  //
+  ticketsFormElement.reset();
 });

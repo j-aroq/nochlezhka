@@ -1,0 +1,15 @@
+.main-window__title {
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 0 0 16px 0;
+}
+@media screen and (max-width: 460px) {
+  .main-window__title {
+    font-size: 32px;
+    margin-bottom: 12px;
+    line-height: 36px;
+    letter-spacing: normal;
+  }
+}

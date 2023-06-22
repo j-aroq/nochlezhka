@@ -1,0 +1,10 @@
+.main-window__thanks-image {
+  max-width: 385.88px;
+  max-height: 301.47px;
+}
+@media screen and (max-width: 460px) {
+  .main-window__thanks-image {
+    max-width: 320px;
+    max-height: 256px;
+  }
+}

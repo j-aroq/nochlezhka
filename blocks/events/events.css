@@ -1,6 +1,9 @@
 .events {
-    background-color: #EBE9ED;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: "TT_Firs_Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #ebe9ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

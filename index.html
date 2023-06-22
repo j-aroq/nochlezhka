@@ -11,10 +11,10 @@
 <body class="page">
   <header class="header">
     <div class="header__container">
-      <img src="./images/logo.svg" alt="logo" class="header__logo">
+      <img src="./images/logo.svg" alt="Гедонизм-фест" class="header__logo">
       <div class="header__menu">
         <button type="button" class="header__location-button page__button">
-          <img src="./images/location.svg" alt="location" class="header__location-image">
+          <img src="./images/location.svg" alt="Иконка локации" class="header__location-image">
           <span class="header__location-button-text">Санкт-Петербург</span>
         </button>
         <nav class="header__navigation">
@@ -29,11 +29,11 @@
           </a>
         </nav>
         <a class="header__link page__link" href="#" target="_blank">
-          <img src="./images/like.svg" alt="like" class="header__like-image">
+          <img src="./images/like.svg" alt="Иконка сердечка" class="header__like-image">
           <p class="header__link-text">хочу пойти</p>
         </a>
         <button class="header__menu-button page__button" type="button">
-          <img src="./images/menu.svg" alt="menu">
+          <img src="./images/menu.svg" alt="Меню">
         </button>
         <button class="header__donate-button page__button" type="button">
           <span class="header__donate-text">поддержать</span>
@@ -317,17 +317,17 @@
           <ul class="footer__link-list footer__link-list_type_social">
             <li class="footer__list-element">
               <a href="#" target="_blank" class="footer__link footer__link_type_social">
-                <img class="footer__social-icon" src="./images/facebook-logo.svg" alt="Логотип Facebook">
+                <img class="footer__social-icon page__button" src="./images/facebook-logo.svg" alt="Логотип Facebook">
               </a>
             </li>
             <li class="footer__list-element">
               <a href="#" target="_blank" class="footer__link footer__link_type_social">
-                <img class="footer__social-icon" src="./images/instagram-logo.svg" alt="Логотип Instagram">
+                <img class="footer__social-icon page__button" src="./images/instagram-logo.svg" alt="Логотип Instagram">
               </a>
             </li>
             <li class="footer__list-element">
               <a href="#" target="_blank" class="footer__link footer__link_type_social">
-                <img class="footer__social-icon" src="./images/vkontakte-logo.svg" alt="Логотип Вконтакте">
+                <img class="footer__social-icon page__button" src="./images/vkontakte-logo.svg" alt="Логотип Вконтакте">
               </a>
             </li>
           </ul>
@@ -402,38 +402,41 @@
     </div>
   </div>
 
+  <!-- <div class="popup popup_type_donate popup_opened"> -->
   <div class="popup popup_type_donate">
     <div class="popup__container popup__container_type_donate">
       <form class="popup__donate-form" name="donate" id="donate">
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
-        <button type="button" class="popup__donate-close-button page__button">
-          <span class="popup__donate-close-button-text">пожертвовать</span>
-          <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
-        </button>
-        <p class="popup__donate-text">сумма</p>
+        <div class="popup__header">
+          <h2 class="popup__title">пожертвовать</h2>
+          <button type="button" class="popup__close-button page__button">
+            <img src="./images/close-icon.svg" alt="закрыть" class="popup__close-button-picture">
+          </button>
+        </div>
+        <p class="popup__text">сумма</p>
         <div class="popup__sum-of-money-container">
-          <button type="button" class="popup__sum-of-money popup__sum-of-money_active page__button">
+          <button type="button" name="sum-of-money" class="popup__sum-of-money popup__sum-of-money_active page__button-hover">
             <span class="popup__sum-of-money-text">100 ₽</span>
           </button>
-          <button type="button" class="popup__sum-of-money page__button">
+          <button type="button" name="sum-of-money" class="popup__sum-of-money page__link-hover page__link-hover_border">
             <span class="popup__sum-of-money-text">300 ₽</span>
           </button>
-          <button type="button" class="popup__sum-of-money page__button">
+          <button type="button" name="sum-of-money" class="popup__sum-of-money page__link-hover page__link-hover_border">
             <span class="popup__sum-of-money-text">500 ₽</span>
           </button>
-          <button type="button" class="popup__sum-of-money page__button">
+          <button type="button" name="sum-of-money" class="popup__sum-of-money page__link-hover page__link-hover_border">
             <span class="popup__sum-of-money-text">1000 ₽</span>
           </button>
-          <button type="button" class="popup__sum-of-money page__button">
+          <button type="button" name="sum-of-money" class="popup__sum-of-money page__link-hover page__link-hover_border">
             <span class="popup__sum-of-money-text">3000 ₽</span>
           </button>
-          <input type="text" name="sum-of-money" id="sum-of-money" placeholder="другая сумма"
-            class="popup__sum-of-money-input">
+          <input type="number" name="sum-of-money" id="sum-of-money" placeholder="другая сумма"
+            class="popup__sum-of-money-input" min="1">
         </div>
-        <p class="popup__donate-text">email</p>
+        <p class="popup__text">email</p>
         <input type="email" name="email" id="email" placeholder="укажите почту для отправки чека"
-          class="popup__email-input" required>
-        <p class="popup__donate-text">способ оплаты</p>
+          class="popup__email-input" >
+        <p class="popup__text">способ оплаты</p>
         <fieldset class="popup__payment-method">
           <label for="card" class="popup__payment-method-label">
             <input type="radio" name="payment" id="card" value="банковской картой" class="popup__form-radio" checked>
@@ -447,13 +450,61 @@
           </label>
         </fieldset>
         <p class="popup__offer">Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями <a href="#"
-            class="popup__offer popup__offer_color_blue page__link" target="_blank">оферты</a>, <a href="#"
-            class="popup__offer popup__offer_color_blue page__link" target="_blank">политики</a> в отношении обработки
-          и защиты персональных данных и даёте <a href="#" class="popup__offer popup__offer_color_blue page__link"
+            class="popup__offer popup__offer_color_blue page__link-hover" target="_blank">оферты</a>, <a href="#"
+            class="popup__offer popup__offer_color_blue page__link-hover" target="_blank">политики</a> в отношении обработки
+          и защиты персональных данных и даёте <a href="#" class="popup__offer popup__offer_color_blue page__link-hover"
             target="_blank">согласие</a> на их обработку</p>
       </form>
-      <button class="popup__donate-button page__button" type="submit" form="donate">
-        <span class="popup__donate-button-text">перейти к оплате</span>
+      <button class="popup__submit-button page__button-hover" type="submit" form="donate">
+        <span class="popup__submit-button-text">перейти к оплате</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- <div class="popup popup_type_tickets popup_opened"> -->
+  <div class="popup popup_type_tickets">
+    <div class="popup__container popup__container_type_tickets">
+      <form class="popup__tickets-form" name="tickets" id="tickets">
+        <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
+        <div class="popup__header">
+          <h2 class="popup__title">купить билет</h2>
+          <button type="button" class="popup__close-button page__button">
+          <img src="./images/close-icon.svg" alt="закрыть" class="popup__close-button-picture">
+          </button>
+        </div>
+        <p class="popup__text">сумма и количество</p>
+        <fieldset class="popup__tickets-purchase">
+          <p class="popup__tickets-price">500 &#8381;</p>
+            <div class="popup__tickets-amount">
+              <button class="popup__tickets-button popup__tickets-button_type_less page__button-hover page__link-hover_border" type="button">-</button>
+              <input class="popup__tickets-input" value="1" type="number" id="amount" name="amount">
+              <button class="popup__tickets-button popup__tickets-button_type_more page__button-hover page__link-hover_border" type="button">+</button>
+            </div>
+        </fieldset>
+        <p class="popup__text">email</p>
+        <input type="email" name="email" id="email-tickets" placeholder="укажите почту для отправки чека"
+        class="popup__email-input popup__email-input_type_tickets" required >
+        <p class="popup__text">способ оплаты</p>
+      <fieldset class="popup__payment-method">
+        <label for="cards" class="popup__payment-method-label">
+          <input type="radio" name="payment" id="cards" value="банковской картой" class="popup__form-radio" checked>
+          <span class="popup__pseudo-item popup__pseudo-item_payment"></span>
+          <span>банковской картой</span>
+        </label>
+        <label for="paypals" class="popup__payment-method-label">
+          <input type="radio" name="payment" id="paypals" value="paypal" class="popup__form-radio">
+          <span class="popup__pseudo-item popup__pseudo-item_payment"></span>
+          <span>PayPal</span>
+        </label>
+      </fieldset>
+      <p class="popup__offer">Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями <a href="#"
+          class="popup__offer popup__offer_color_blue page__link" target="_blank">оферты</a>, <a href="#"
+          class="popup__offer popup__offer_color_blue page__link" target="_blank">политики</a> в отношении обработки
+        и защиты персональных данных и даёте <a href="#" class="popup__offer popup__offer_color_blue page__link"
+          target="_blank">согласие</a> на их обработку</p>
+      </form>
+      <button class="popup__submit-button page__button-hover " type="submit" form="tickets">
+        <span class="popup__submit-button-text">перейти к оплате</span>
       </button>
     </div>
   </div>

@@ -11,10 +11,24 @@
   white-space: nowrap;
 }
 
+.popup__sum-of-money-input:focus {
+  outline: none;
+  border: 2px solid #7100FF;
+}
+
+.popup__sum-of-money-input:invalid:not(:placeholder-shown) {
+  border: 2px solid #F40934;
+}
+/* удаление стрелок в input type="number" */
+.popup__sum-of-money-input::-webkit-outer-spin-button,
+.popup__sum-of-money-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 @media screen and (min-width: 768.98px) {
   .popup__sum-of-money-input {
     font-size: 18px;
     line-height: 24px;
-    border-radius: 24px;
+    border-radius: 26px;
   }
 }

@@ -1,0 +1,4 @@
+.popup__tickets-amount{
+  display: flex;
+  flex-direction: row;
+}

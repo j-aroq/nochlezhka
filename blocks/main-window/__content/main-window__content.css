@@ -1,0 +1,12 @@
+.main-window__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  align-self: center;
+}
+@media screen and (max-width: 460px) {
+  .main-window__content {
+    max-width: 320px;
+    justify-self: flex-start;
+  }
+}
